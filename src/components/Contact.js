@@ -60,8 +60,18 @@ const Contact = () => {
                   </div>
                   <div>
                     <h4 className="font-bold mb-1 text-dencho-cyan">Phone</h4>
-                    <p className="text-dencho-light/90">+254 (0)725 540 972</p>
-                    <p className="text-dencho-light/90">+254 (0)722 686 602</p>
+                    <a 
+                      href="tel:+254725540972" 
+                      className="block text-dencho-light/90 hover:text-dencho-cyan transition-colors hover:underline"
+                    >
+                      +254 (0)725 540 972
+                    </a>
+                    <a 
+                      href="tel:+254722686602" 
+                      className="block text-dencho-light/90 hover:text-dencho-cyan transition-colors hover:underline"
+                    >
+                      +254 (0)722 686 602
+                    </a>
                   </div>
                 </div>
 
@@ -71,9 +81,35 @@ const Contact = () => {
                   </div>
                   <div>
                     <h4 className="font-bold mb-1 text-dencho-cyan">Email</h4>
-                    <p className="text-dencho-light/90">denchoenterprise@gmail.com</p>
+                    <a 
+                      href="mailto:denchoenterprise@gmail.com"
+                      className="block text-dencho-light/90 hover:text-dencho-cyan transition-colors hover:underline"
+                    >
+                      denchoenterprise@gmail.com
+                    </a>
                   </div>
                 </div>
+
+                <a 
+                  href="https://wa.me/254725540972" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="group flex items-start space-x-4 p-4 rounded-xl hover:bg-white/5 transition-all cursor-pointer border-2 border-green-500/30 hover:border-green-500/60"
+                >
+                  <div className="w-12 h-12 bg-gradient-to-br from-green-400 to-green-600 rounded-lg flex items-center justify-center text-xl flex-shrink-0 group-hover:scale-110 transition-transform">
+                    💬
+                  </div>
+                  <div>
+                    <h4 className="font-bold mb-1 text-dencho-cyan flex items-center gap-2">
+                      WhatsApp
+                      <span className="text-xs bg-green-500/20 text-green-400 px-2 py-0.5 rounded-full">Live Chat</span>
+                    </h4>
+                    <p className="text-dencho-light/90 group-hover:text-green-400 transition-colors">
+                      +254 725 540 972
+                    </p>
+                    <p className="text-xs text-dencho-light/60 mt-1">Click to chat with us instantly</p>
+                  </div>
+                </a>
               </div>
             </div>
             
